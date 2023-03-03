@@ -1,0 +1,10 @@
+name: Github actions
+run-name: This is testing out github actions
+on: [push]
+jobs:
+  install_composer:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Executing composer install command"
+      - run: composer install
+      - run: echo "Composer install has been completed"
