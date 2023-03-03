@@ -11,4 +11,5 @@ jobs:
         php_version: "7.4"
         version: 2
         command: update
+        args: -W
     
