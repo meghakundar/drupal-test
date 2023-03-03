@@ -8,5 +8,6 @@ jobs:
     - name: Install dependencies
       uses: php-actions/composer@v6
       with:
-        command: composer install
+        php_version: "7.1"
+        version: 1
     
