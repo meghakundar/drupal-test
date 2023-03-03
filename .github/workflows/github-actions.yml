@@ -1,0 +1,15 @@
+name: Github actions
+run-name: This is testing out github actions
+on: [push]
+jobs:
+  install_composer:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: php-actions/composer@v6
+      with:
+        php_version: "7.4"
+        version: 2
+        command: update
+        args: -W
+    
