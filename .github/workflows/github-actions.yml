@@ -5,8 +5,8 @@ jobs:
   install_composer:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Executing composer install command"
-      - run: cd ../..
-      - run: echo pwd
-      - run: composer install
-      - run: echo "Composer install has been completed"
+    - name: Install dependencies
+      uses: php-actions/composer@v6
+      with:
+        command: composer install
+    
