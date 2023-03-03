@@ -6,5 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Executing composer install command"
+      - run: cd ../..
+      - run: echo pwd
       - run: composer install
       - run: echo "Composer install has been completed"
